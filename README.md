@@ -1,3 +1,4 @@
 # Snake-ai-pytorch
 
-work based on 
+work based on @python-engineer
+python-engineer work
