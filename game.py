@@ -27,7 +27,7 @@ BLOCK_SIZE = 20
 SPEED = 1000
 
 class SnakeGameAI:
-    def __init__(self,w=1920 ,h=1080):  #  w=640 ,h=480    w=1920 ,h=1080
+    def __init__(self,w=640 ,h=480):  #  w=320 ,h=200 w=640 ,h=480   w=800 ,h=640  w=1920 ,h=1080
         self.w = w
         self.h = h
 
@@ -82,7 +82,7 @@ class SnakeGameAI:
         #4. place new food or just move
         if self.head == self.food:
             self.score += 1
-            reward = 10
+            reward = 2
             self._place_food()
         else:
             self.snake.pop()

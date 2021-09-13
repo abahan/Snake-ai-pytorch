@@ -9,7 +9,7 @@ from helper import plot
 
 MAX_MEMORY = 500_000
 BATCH_SIZE = 1000
-LR = 0.0001
+LR = 0.001
 
 class Agent:
 
@@ -110,7 +110,7 @@ class Agent:
         # random moves: tradeoff exploration / exploitation
 
         ########################################################################################################
-        # self.epsilon = 80 - self.n_games for a re run and no training file "model.pth"
+        #self.epsilon = 80 - self.n_games #for a re run and no training file "model.pth"
         self.epsilon = 0 - self.n_games
         final_move = [0,0,0]
         if random.randint(0, 200) < self.epsilon:
